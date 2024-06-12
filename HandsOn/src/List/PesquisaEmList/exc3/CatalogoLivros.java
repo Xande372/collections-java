@@ -1,4 +1,4 @@
-package PesquisaEmList.exc3;
+package List.PesquisaEmList.exc3;
 
 import java.util.ArrayList;
 import java.util.List;

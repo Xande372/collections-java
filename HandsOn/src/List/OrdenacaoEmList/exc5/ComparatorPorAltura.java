@@ -1,4 +1,4 @@
-package OrdenacaoEmList.exc5;
+package List.OrdenacaoEmList.exc5;
 
 import java.util.Comparator;
 

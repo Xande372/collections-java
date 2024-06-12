@@ -1,16 +1,19 @@
-import OrdenacaoEmList.exc5.OrdenacaoPessoas;
+import Set.OperacoesBasicasEmSet.ConjuntoConvidados;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
+        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
 
-        ordenacaoPessoas.adicionarPessoa("Alexandre", 24, 1.75);
-        ordenacaoPessoas.adicionarPessoa("Bianca", 23, 1.68);
-        ordenacaoPessoas.adicionarPessoa("Camargo", 78, 1.56);
+        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
+        conjuntoConvidados.adicionarConvidado("Convidado 2", 2);
+        conjuntoConvidados.adicionarConvidado("Convidado 3", 3);
+        conjuntoConvidados.adicionarConvidado("Convidado 4", 4);
 
-        System.out.println(ordenacaoPessoas.pessoaList);
-        System.out.println(ordenacaoPessoas.ordenarPorIdade());
-        System.out.println(ordenacaoPessoas.ordenarPorAltura());
-    }
+        System.out.println("Tem: " + conjuntoConvidados.contarConvidados() + " convidados.");
+        conjuntoConvidados.exibirConvidados();
+
+        conjuntoConvidados.removerConvidadoPorCodigoConvite(3);
+        conjuntoConvidados.exibirConvidados();
+    }   
 }

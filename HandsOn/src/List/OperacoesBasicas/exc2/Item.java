@@ -1,4 +1,4 @@
-package OperacoesBasicas.exc2;
+package List.OperacoesBasicas.exc2;
 
 //classe que represena o elemento dentro do carrinho de compras.
 public class Item {

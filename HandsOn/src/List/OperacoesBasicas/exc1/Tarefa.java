@@ -1,4 +1,4 @@
-package OperacoesBasicas.exc1;
+package List.OperacoesBasicas.exc1;
 
 //classe que representa o elemento que estará dentro da ListaDeTarefas.
 public class Tarefa {
