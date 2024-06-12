@@ -1,15 +1,18 @@
-import Set.OrdenacaoEmSet.CadastroProdutos;
+import Map.OperacoesBasicasEmMap.AgendaContatos;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        CadastroProdutos cadastroProdutos = new CadastroProdutos();
+        AgendaContatos agendaContatos = new AgendaContatos();
 
-        cadastroProdutos.adicionarProduto("lápis", 12, 5d, 10);
-        cadastroProdutos.adicionarProduto("caneta", 20, 7d, 5);
-        cadastroProdutos.adicionarProduto("caderno", 30, 10d, 20);
-    
-        System.out.println(cadastroProdutos.produtoSet);
-        System.out.println(cadastroProdutos.exibirProdutosPorPreco());
+        //trabalhando com o método put, servindo tanto pra atualizar como para adicionar.
+        //se repetir a chave, o put faz o replace.
+        agendaContatos.adicionarContato("Alexandre", 134);
+        agendaContatos.adicionarContato("Bianca", 576);
+        agendaContatos.adicionarContato("Alebi", 896);
+        agendaContatos.adicionarContato("Biale", 125);
+
+        agendaContatos.exibirContatos();
+
     }   
 }
