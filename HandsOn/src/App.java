@@ -1,18 +1,16 @@
-import PesquisaEmList.exc4.SomaNumeros;
+import OrdenacaoEmList.exc5.OrdenacaoPessoas;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        SomaNumeros somaNumeros = new SomaNumeros();
+        OrdenacaoPessoas ordenacaoPessoas = new OrdenacaoPessoas();
 
-        somaNumeros.adicionarNumero(1);
-        somaNumeros.adicionarNumero(2);
-        somaNumeros.adicionarNumero(3);
-        somaNumeros.adicionarNumero(4);
+        ordenacaoPessoas.adicionarPessoa("Alexandre", 24, 1.75);
+        ordenacaoPessoas.adicionarPessoa("Bianca", 23, 1.68);
+        ordenacaoPessoas.adicionarPessoa("Camargo", 78, 1.56);
 
-        System.out.println(somaNumeros.encontrarMaiorNumero());
-        System.out.println(somaNumeros.encontrarMenorNumero());
-        somaNumeros.exibirNumeros();
-        System.out.println(somaNumeros.calcularSoma());
+        System.out.println(ordenacaoPessoas.pessoaList);
+        System.out.println(ordenacaoPessoas.ordenarPorIdade());
+        System.out.println(ordenacaoPessoas.ordenarPorAltura());
     }
 }
