@@ -1,17 +1,15 @@
-import Set.PesquisaEmSet.AgendaContatos;
+import Set.OrdenacaoEmSet.CadastroProdutos;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        AgendaContatos agendaContatos = new AgendaContatos();
+        CadastroProdutos cadastroProdutos = new CadastroProdutos();
 
-        agendaContatos.adicionarContato("Contato 1", 123);
-        agendaContatos.adicionarContato("Contato 2", 456);
-        agendaContatos.adicionarContato("Contato 3", 789);
-        agendaContatos.adicionarContato("Contato 4", 000);
-        agendaContatos.exibirContatos();
-
-        agendaContatos.atualizarNumeroContato("Contato 1", 233);
-        agendaContatos.exibirContatos();
+        cadastroProdutos.adicionarProduto("lápis", 12, 5d, 10);
+        cadastroProdutos.adicionarProduto("caneta", 20, 7d, 5);
+        cadastroProdutos.adicionarProduto("caderno", 30, 10d, 20);
+    
+        System.out.println(cadastroProdutos.produtoSet);
+        System.out.println(cadastroProdutos.exibirProdutosPorPreco());
     }   
 }
