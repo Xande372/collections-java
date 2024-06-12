@@ -1,17 +1,18 @@
-import PesquisaEmList.exc3.CatalogoLivros;
+import PesquisaEmList.exc4.SomaNumeros;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        CatalogoLivros catalogoLivros = new CatalogoLivros();
+        SomaNumeros somaNumeros = new SomaNumeros();
 
-        catalogoLivros.adicionarLivro("Livro 1", "Autor 1", 2021);
-        catalogoLivros.adicionarLivro("Livro 2", "Autor 2", 2022);
-        catalogoLivros.adicionarLivro("Livro 3", "Autor 3", 2023);
-        catalogoLivros.adicionarLivro("Livro 4", "Autor 4", 2024);
-        catalogoLivros.adicionarLivro("Livro 5", "Autor 5", 2025);
-        System.out.println("Por título: " + catalogoLivros.pesquisarPorTitulo("Livro 3"));
-        System.out.println("Por Autor: " + catalogoLivros.pesquisarPorAutor("autor 2"));
-        System.out.println("Do ano de 2022 até 2024: " + catalogoLivros.pesquisaPorIntervaloDeAnos(2022, 2024));
+        somaNumeros.adicionarNumero(1);
+        somaNumeros.adicionarNumero(2);
+        somaNumeros.adicionarNumero(3);
+        somaNumeros.adicionarNumero(4);
+
+        System.out.println(somaNumeros.encontrarMaiorNumero());
+        System.out.println(somaNumeros.encontrarMenorNumero());
+        somaNumeros.exibirNumeros();
+        System.out.println(somaNumeros.calcularSoma());
     }
 }
