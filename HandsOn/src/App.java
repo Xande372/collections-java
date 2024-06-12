@@ -1,19 +1,17 @@
-import Set.OperacoesBasicasEmSet.ConjuntoConvidados;
+import Set.PesquisaEmSet.AgendaContatos;
 
 public class App {
     public static void main(String[] args) throws Exception {
         
-        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+        AgendaContatos agendaContatos = new AgendaContatos();
 
-        conjuntoConvidados.adicionarConvidado("Convidado 1", 1);
-        conjuntoConvidados.adicionarConvidado("Convidado 2", 2);
-        conjuntoConvidados.adicionarConvidado("Convidado 3", 3);
-        conjuntoConvidados.adicionarConvidado("Convidado 4", 4);
+        agendaContatos.adicionarContato("Contato 1", 123);
+        agendaContatos.adicionarContato("Contato 2", 456);
+        agendaContatos.adicionarContato("Contato 3", 789);
+        agendaContatos.adicionarContato("Contato 4", 000);
+        agendaContatos.exibirContatos();
 
-        System.out.println("Tem: " + conjuntoConvidados.contarConvidados() + " convidados.");
-        conjuntoConvidados.exibirConvidados();
-
-        conjuntoConvidados.removerConvidadoPorCodigoConvite(3);
-        conjuntoConvidados.exibirConvidados();
+        agendaContatos.atualizarNumeroContato("Contato 1", 233);
+        agendaContatos.exibirContatos();
     }   
 }
