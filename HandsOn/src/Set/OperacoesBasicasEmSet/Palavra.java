@@ -11,4 +11,9 @@ public class Palavra {
     public String getPalavra() {
         return palavra;
     }
+
+    @Override
+    public String toString() {
+        return "Palavra = " + palavra;
+    }
 }
